@@ -1,21 +1,47 @@
 <?php
-$name = "tooba";
-$email  = "tooba@gmail.com";
-$age = 20;
-$password =  17024;
-$city  = "karachi";
+
+// $num = 55;
+
+// if($num % 2 == 0){
+//     // echo "even";
+//     print("even");
+
+// }
+// else{
+//    echo "odd";
+// }
 
 
-echo "<h1 style='color:red'>$name</h1>";
-echo "<p>my name is $name</p>";
-echo "<h1 style='color:yellow'>$email</h1>";
-echo "<p>my email address is $email</p>";
-echo "<script>console.log('$password')</script>";
-echo "<script>document.write('$age')</script>";
+$math = 25;
+$urdu = 20;
+$eng = 25;
+$physics = 35;
+$bio = 88;
 
+$obt_marks = $math + $urdu + $eng + $physics + $bio;
 
-echo "<p style='color:pink'>my name is $name</p>"."<p style='color:pink'>my email address is $email</p>"."<p style='color:pink'>I am  $age years old</p>".$password."<p style='color:pink'>I  Live in   $city</p>";
+$total_marks = 500;
+$percentage = $obt_marks/$total_marks * 100;
+echo $percentage;
 
+if ($percentage >= 80 && $percentage <= 100){
+    echo "Grade A+";
 
+}
+else if ($percentage >= 70 && $percentage <= 79){
+    echo "Grade A";
+}
+elseif ($percentage >= 60 && $percentage <=69) {
+    echo "Grade B";
+}
+elseif ($percentage >= 50 && $percentage <=59) {
+    echo "Grade C";
+}
+elseif ($percentage >= 40 && $percentage <=59) {
+    echo "Grade D";
+}
 
+else{
+    echo "Fail";
+}
 ?>
