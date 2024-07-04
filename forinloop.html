@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // ForIn loop
+// var obj = {
+//     firstName : "mirha",
+//     lastName : "Iman",
+//     email : "mirha@gmail.com",
+//     age : 20
+// };
+// document.write(obj.firstName,obj.email)
+
+
+// for (var key in obj){
+// //     document.write (key + ":" + obj[key] + "<br>");
+// document.write(obj[key] +"<br>");
+// }
+
+
+
+//multidimensional objects
+let data =[
+    {
+        name :"noor",
+        age : 20
+    },
+    {
+        name: "mirha",
+        age : 18
+    },
+    {
+        name : "ali",
+        age : 25
+    }
+
+]
+// document.write(data[1].name)
+
+document.write ("<br> <br>");
+for (let record in data){
+    document.write(data[record].name + "<br>");
+    document.write(data[record].age + "<br>")
+
+}
+    //nested forin loop
+for (let value in data){
+
+    for (let value1 in data[value]){
+
+        document.write(data[value][value1] + "<br>")
+    }
+}
+
+
+</script>
+</body>
+</html>
